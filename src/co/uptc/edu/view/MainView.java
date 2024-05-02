@@ -4,7 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class MainView extends JFrame {
-    public MainView(){
+    private static final MainView instance = new MainView();
+    private MainView(){
         initFrame();
         createPanels();
     }
@@ -14,6 +15,7 @@ public class MainView extends JFrame {
         createNewsPanel();
         createWorkPanel();
         createHeaderPanel();
+        createMenuBar();
     }
     private void initFrame(){
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -44,6 +46,13 @@ public class MainView extends JFrame {
     private void createHeaderPanel(){
         HeaderPanel headerPanel = new HeaderPanel();
         add(headerPanel, BorderLayout.NORTH);
+    }
+    private void createMenuBar(){
+        MenuHeader menuHeader = new MenuHeader();
+        setJMenuBar(menuHeader);
+    }
+    public static MainView getInstance(){
+        return instance;
     }
 
 }
