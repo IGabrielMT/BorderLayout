@@ -1,7 +1,7 @@
 package co.uptc.edu.view.managerPerson;
 
-import co.uptc.edu.view.jokerClasses.LimitedTextField;
-import co.uptc.edu.view.jokerClasses.NumericTextField;
+import co.uptc.edu.view.wildCardClasses.LimitedTextField;
+import co.uptc.edu.view.wildCardClasses.NumericTextField;
 import com.toedter.calendar.JDateChooser;
 
 

@@ -1,4 +1,4 @@
-package co.uptc.edu.view.jokerClasses;
+package co.uptc.edu.view.wildCardClasses;
 import javax.swing.*;
 import javax.swing.text.*;
 
