@@ -8,7 +8,7 @@ public class StatusPanel extends JPanel {
         initPanel();
     }
     private void initPanel(){
-        setBackground(Color.YELLOW);
+        setBackground(Global.FOOTER_BACKGROUND_COLOR);
         setPreferredSize(new Dimension(0, 30));
     }
 }

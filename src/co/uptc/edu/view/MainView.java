@@ -28,7 +28,7 @@ public class MainView extends JFrame {
         setVisible(true);
     }
     private void createMenuPanel(){
-        MenuPanel menuPanel = new MenuPanel();
+        NewsPanel menuPanel = new NewsPanel();
         add(menuPanel, BorderLayout.EAST);
     }
     private void createStatusPanel(){
@@ -36,7 +36,7 @@ public class MainView extends JFrame {
         add(statusPanel, BorderLayout.SOUTH);
     }
     private void createNewsPanel(){
-        NewsPanel newsPanel = new NewsPanel();
+        MenuPanel newsPanel = new MenuPanel();
         add(newsPanel, BorderLayout.WEST);
     }
     private void createWorkPanel(){

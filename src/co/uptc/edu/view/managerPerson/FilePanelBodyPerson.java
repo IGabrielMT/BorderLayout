@@ -1,5 +1,6 @@
 package co.uptc.edu.view.managerPerson;
 
+import co.uptc.edu.view.Global;
 import co.uptc.edu.view.wildCardClasses.LimitedTextField;
 import co.uptc.edu.view.wildCardClasses.NumericTextField;
 import com.toedter.calendar.JDateChooser;
@@ -33,7 +34,7 @@ public class FilePanelBodyPerson extends JPanel {
     }
 
     private void initPanel() {
-        setBackground(Color.GREEN);
+        setBackground(Global.WORK_BACKGROUND_COLOR);
         setLayout(null);
     }
     private void createLblDocumentType(){

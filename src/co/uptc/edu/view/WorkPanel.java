@@ -16,7 +16,7 @@ public class WorkPanel extends JPanel {
     }
 
     private void initPanel(){
-        setBackground(Color.RED);
+        setBackground(Global.WORK_BACKGROUND_COLOR);
         setLayout(new GridBagLayout());
     }
 }

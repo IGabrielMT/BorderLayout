@@ -1,6 +1,9 @@
 package co.uptc.edu.view.managerPerson;
 
 import javax.swing.*;
+
+import co.uptc.edu.view.Global;
+
 import java.awt.*;
 
 public class PanelHeaderPerson extends JPanel {
@@ -9,8 +12,7 @@ public class PanelHeaderPerson extends JPanel {
     }
 
     private void initPanel() {
-        setBackground(Color.BLUE);
-
+        setBackground(Global.HEADER_BACKGROUND_COLOR);
         createTitle();
     }
     private void createTitle() {

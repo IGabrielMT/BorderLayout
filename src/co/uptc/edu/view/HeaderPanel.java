@@ -15,7 +15,7 @@ public class HeaderPanel extends JPanel {
     }
 
     private void initPanel() {
-        setBackground(Color.ORANGE);
+        setBackground(Global.HEADER_BACKGROUND_COLOR);
         setPreferredSize(new Dimension(0, 100));
         setLayout(null);
     }
@@ -23,16 +23,19 @@ public class HeaderPanel extends JPanel {
     private void createTitle() {
         JLabel title = new JLabel("UNIVERSIDAD PEDAGOGIA Y TECONOLOGIA DE COLOMBIA");
         title.setFont(new Font("Arial", Font.ITALIC, 15));
+        title.setForeground(Global.HEADER_TEXT_COLOR);
         Dimension titleSize = title.getPreferredSize();
         title.setBounds(0, 10, getPreferredWidthWithFont(title), titleSize.height);
         add(title);
 
         JLabel title2 = new JLabel("FACULTAD DE INGENIERIA");
         title2.setFont(new Font("Arial", Font.BOLD, 10));
+        title2.setForeground(Global.HEADER_TEXT_COLOR);
         titleSize = title2.getPreferredSize();
         title2.setBounds(0, 30, getPreferredWidthWithFont(title2), titleSize.height);
         add(title2);
         JLabel title3 = new JLabel("PROGRAMA DE INGENIERIA DE SISTEMAS");
+        title3.setForeground(Global.HEADER_TEXT_COLOR);
         titleSize = title3.getPreferredSize();
         title3.setBounds(0, 50, getPreferredWidthWithFont(title3), titleSize.height);
         add(title3);
