@@ -9,12 +9,11 @@ import java.awt.*;
 public class PanelFooterPerson extends JPanel {
     public PanelFooterPerson(){
         initPanel();
-        createAddBtn();
         createEraseBtn();
+        createAddBtn();
     }
     private void initPanel() {
         setBackground(Global.FOOTER_BACKGROUND_COLOR);
-        setLayout(null);
     }
     private void createAddBtn(){
         JButton button = new JButton("Añadir");
