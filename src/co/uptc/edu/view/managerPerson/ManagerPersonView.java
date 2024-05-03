@@ -9,6 +9,7 @@ public class ManagerPersonView extends JDialog {
 
 
     public ManagerPersonView() {
+        super(MainView.getInstance(), true);
         initDialog();
         createPanelHeader();
         createPanelBody();

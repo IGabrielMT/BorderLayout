@@ -7,7 +7,6 @@ import com.toedter.calendar.JDateChooser;
 
 
 import javax.swing.*;
-import java.awt.*;
 
 public class FilePanelBodyPerson extends JPanel {
     public FilePanelBodyPerson(){

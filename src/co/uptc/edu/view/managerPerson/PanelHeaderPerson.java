@@ -4,7 +4,6 @@ import javax.swing.*;
 
 import co.uptc.edu.view.Global;
 
-import java.awt.*;
 
 public class PanelHeaderPerson extends JPanel {
     public PanelHeaderPerson(){

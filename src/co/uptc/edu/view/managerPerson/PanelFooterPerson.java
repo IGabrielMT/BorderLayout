@@ -1,10 +1,11 @@
 package co.uptc.edu.view.managerPerson;
 
+import java.awt.Dimension;
+
 import javax.swing.*;
 
 import co.uptc.edu.view.Global;
 
-import java.awt.*;
 
 public class PanelFooterPerson extends JPanel {
     public PanelFooterPerson(){
@@ -17,12 +18,14 @@ public class PanelFooterPerson extends JPanel {
     }
     private void createAddBtn(){
         JButton button = new JButton("Añadir");
-        button.setBounds(10, 10, 80, 30);
+        Dimension d = button.getPreferredSize();
+        button.setSize(d);
         add(button);
     }
     private void createEraseBtn(){
         JButton button = new JButton("Borrar");
-        button.setBounds(10, 40, 80, 30);
+        Dimension d = button.getPreferredSize();
+        button.setSize(d);
         add(button);
     }
 }

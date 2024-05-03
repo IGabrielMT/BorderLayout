@@ -54,5 +54,4 @@ public class MainView extends JFrame {
     public static MainView getInstance(){
         return instance;
     }
-
 }

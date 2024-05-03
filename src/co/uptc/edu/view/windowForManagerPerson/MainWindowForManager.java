@@ -8,21 +8,21 @@ import java.awt.*;
 
 public class MainWindowForManager extends JDialog {
     public MainWindowForManager(){
+        super(MainView.getInstance(), true);
         initWindow();
         createButton();
     }
 
     private void initWindow() {
         setTitle("Manejador de personas");
-        setSize(800, 600);
+        setSize(200,200 );
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setLocationRelativeTo(MainView.getInstance());
-        setLayout(null);
     }
     private void createButton(){
         JButton button = new JButton("Agregar persona");
         Dimension d = button.getPreferredSize();
-        button.setBounds(10, 10, d.width, d.height);
+        button.setSize(d);
         button.addActionListener(e -> createManagerPersonView());
         add(button);
     }

@@ -27,7 +27,6 @@ public class HeaderPanel extends JPanel {
         Dimension titleSize = title.getPreferredSize();
         title.setBounds(0, 10, getPreferredWidthWithFont(title), titleSize.height);
         add(title);
-
         JLabel title2 = new JLabel("FACULTAD DE INGENIERIA");
         title2.setFont(new Font("Arial", Font.BOLD, 10));
         title2.setForeground(Global.HEADER_TEXT_COLOR);
