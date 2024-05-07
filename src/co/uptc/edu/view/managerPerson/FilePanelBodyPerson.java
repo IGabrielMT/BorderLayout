@@ -9,12 +9,17 @@ import com.toedter.calendar.JDateChooser;
 import javax.swing.*;
 
 public class FilePanelBodyPerson extends JPanel {
+    private NumericTextField txtDocumentNumber;
+    private LimitedTextField txtName;
+    private LimitedTextField txtLastName;
+    private JDateChooser txtBirthDate;
+    private JComboBox<String> txtGender;
+
     public FilePanelBodyPerson(){
         initPanel();
         createLabels();
         createFieldsForLabels();
     }
-
     private void createFieldsForLabels() {
         createTextFieldDocumentType();
         createTextFieldDocumentNumber();
@@ -67,36 +72,54 @@ public class FilePanelBodyPerson extends JPanel {
         add(lblGender);
     }
     private void createTextFieldDocumentType(){
-        JList<String> list = new JList<>(new String[] { "Cedula de ciudadania", "Tarjeta de identidad", "Cedula de extranjeria" });
+        JList<String> list = new JList<>(new String[]{"Cedula de ciudadania", "Tarjeta de identidad", "Cedula de extranjeria"});
         JScrollPane txtDocumentType = new JScrollPane(list);
         txtDocumentType.setBounds(210, 15, 200, 20);
         add(txtDocumentType);
     }
     private void createTextFieldDocumentNumber(){
-        NumericTextField txtDocumentNumber = new NumericTextField();
+        txtDocumentNumber = new NumericTextField();
         txtDocumentNumber.setBounds(210, 55, 200, 20);
         add(txtDocumentNumber);
     }
     private void createTextFieldName(){
-        LimitedTextField txtName = new LimitedTextField(40);
+        txtName = new LimitedTextField(40);
         txtName.setBounds(210, 95, 200, 20);
         add(txtName);
     }
     private void createTextFieldLastName(){
-        LimitedTextField txtLastName = new LimitedTextField(40);
+        txtLastName = new LimitedTextField(40);
         txtLastName.setBounds(210, 135, 200, 20);
         add(txtLastName);
     }
     private void createTextFieldBirthDate(){
-        JDateChooser txtBirthDate = new JDateChooser();
+        txtBirthDate = new JDateChooser();
         txtBirthDate.setBounds(210, 175, 200, 20);
         add(txtBirthDate);
     }
     private void createTextFieldGender(){
-        JComboBox<String> txtGender = new JComboBox<>(new String[] { "Masculino", "Femenino" });
+        txtGender = new JComboBox<>(new String[] { "Masculino", "Femenino" });
         txtGender.setBounds(210, 215, 200, 20);
         add(txtGender);
     }
 
+    public NumericTextField getTxtDocumentNumber() {
+        return txtDocumentNumber;
+    }
 
+    public LimitedTextField getTxtName() {
+        return txtName;
+    }
+
+    public LimitedTextField getTxtLastName() {
+        return txtLastName;
+    }
+
+    public JDateChooser getTxtBirthDate() {
+        return txtBirthDate;
+    }
+
+    public JComboBox<String> getTxtGender() {
+        return txtGender;
+    }
 }
